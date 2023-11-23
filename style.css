@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: arial;
+    padding: 5%;
+}
+
+.task_list {
+    width: 300px;
+    min-height: 500px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: rgb(230, 245, 240);
+}
+
+.title {
+    margin-bottom: 15px;
+    text-align: center;
+    color: rgb(10, 47, 88);
+}
+
+.text {
+    width: 100%;
+    padding: 3%;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input_check {
+    width: 20px;
+    height: 20px;
+}
+
+.label_check {
+    font-size: 20px;
+}
+
+.task {
+    margin-left: 10px;
+}
+
+.input_check:checked ~ .label_check{
+    text-decoration: line-through;
+}
+
+.btn_clear {
+    padding: 3% 7%;
+    background: rgb(199, 199, 243);
+    border-radius: 5px;
+    color: rgb(10, 47, 88);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
